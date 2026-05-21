@@ -1,64 +1,473 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Sarmad Shah - Portfolio</title>
+    <meta name="description" content="Sarmad Shah — Software engineer and applied mathematics graduate (May 2026). Portfolio spanning quantitative research, analytics platforms, healthcare systems, and security engineering.">
+    <title>Sarmad Shah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="site-header">
+        <a href="#" class="logo" aria-label="Home">Sarmad Shah</a>
+        <nav class="nav" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </header>
-    <h1>Sarmad Shah</h1>
-    <section id="Contact">
-        <h2>Contact Me</h2>
-        <p> Email: <a href="mailto:shahsarmad205@gmail.com">shahsarmad205@gmail.com</a></p>
-        <p> LinkedIn: <a href="https://www.linkedin.com/in/sarmadshah03/">Sarmad Shah</a></p>
-        <p> Github: <a href="https://github.com/shahsarmad205">Shahsarmad205</a></p>
 
-    </section>
-    <section id="About">
-        <h2>About Me</h2>
-        <p>Hi, My name is Sarmad Shah, a Computer Science and Applied Mathematics student at Suffolk University, Boston.
-            I started my bachelor’s degree in 2023 and am set to graduate by December 2026.
-            I have a strong passion for software development, algorithms, and problem-solving, with a particular focus on backend engineering and system optimization.
-            Currently, I’m working on building the backend for a Performance Marketing App using Java Spring Boot and Python, combining my expertise in both software engineering and mathematical modeling to create efficient and scalable solutions.
-            Beyond academics and coding, I have demonstrated strong leadership and teamwork abilities, earning the Sportsman of the Year award for my dedication to team management and leadership in sports.
-            As an international student from Pakistan, I bring a diverse perspective, adaptability, and a problem-solving mindset to every challenge I take on.
-            I am always open to new opportunities, collaborations, and discussions about technology, finance, and innovation. Let’s connect!
-        </p>
-    </section>
-    <section id="Skills">
-        <h2>Skills</h2>
+    <main>
+        <section class="hero" id="top">
+            <p class="hero-eyebrow">Boston, MA · May 2026</p>
+            <h1>Sarmad Shah</h1>
+            <p class="hero-role">Software Engineer · Quantitative Systems · Applied Mathematics</p>
+            <p class="hero-lead">
+                Recent graduate with a dual degree in <strong>computer science</strong> and <strong>applied mathematics</strong>.
+                I build production backends, quantitative research pipelines, and data-intensive applications
+                across finance, healthcare, operations, and security.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">View projects</a>
+                <a class="btn btn-ghost" href="#contact">Contact</a>
+                <a class="btn btn-ghost" href="https://github.com/shahsarmad205" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+            <dl class="hero-metrics" aria-label="Summary">
+                <div>
+                    <dt>Education</dt>
+                    <dd>B.S. CS & Applied Math</dd>
+                </div>
+                <div>
+                    <dt>Experience</dt>
+                    <dd>SWE · Internships · TA</dd>
+                </div>
+                <div>
+                    <dt>Seeking</dt>
+                    <dd>SWE · Quant · Analyst</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="section" id="about">
+            <p class="section-title">About</p>
+            <h2 class="section-heading">Background</h2>
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>
+                        I graduated from <strong>Suffolk University</strong> (May 2026) with coursework and project work spanning
+                        algorithms, statistics, and full-stack systems engineering. My portfolio reflects work in
+                        <strong>quantitative research</strong>, <strong>operational analytics</strong>,
+                        <strong>healthcare platforms</strong>, and <strong>post-quantum security</strong>.
+                    </p>
+                    <p>
+                        I have interned with product and consulting teams in the United States, Pakistan, and the UAE,
+                        served as a computer science teaching assistant, and led technical workshops on campus.
+                        I am motivated by unfamiliar domains and rigorous delivery standards.
+                    </p>
+                    <p>
+                        I am open to <strong>software engineering</strong>, <strong>quantitative research</strong>,
+                        and <strong>analyst</strong> roles where analytical depth and implementation skill are both required.
+                    </p>
+                </div>
+                <aside class="about-facts">
+                    <h3>At a glance</h3>
+                    <ul>
+                        <li><span>Location</span> Boston, MA</li>
+                        <li><span>Graduation</span> May 2026</li>
+                        <li><span>Background</span> International student (Pakistan)</li>
+                        <li><span>Languages</span> English, Urdu, Sindhi</li>
+                    </ul>
+                </aside>
+            </div>
+
+            <div class="focus-block">
+                <h3>Domain experience</h3>
+                <p class="focus-intro">Technical work across sectors — open to deepening expertise with the right team.</p>
+                <ul class="focus-list">
+                    <li>
+                        <strong>Quant & markets</strong>
+                        <span>Systematic signals, walk-forward validation, ensemble models</span>
+                    </li>
+                    <li>
+                        <strong>Operations analytics</strong>
+                        <span>Signal reconciliation, statistical detection, ROI quantification</span>
+                    </li>
+                    <li>
+                        <strong>Healthcare</strong>
+                        <span>Clinical workflows, FHIR, audit and access control</span>
+                    </li>
+                    <li>
+                        <strong>Security</strong>
+                        <span>Post-quantum cryptography, API auth, compliance tooling</span>
+                    </li>
+                    <li>
+                        <strong>AI infrastructure</strong>
+                        <span>Edge agents, durable state, workflow orchestration</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <p class="section-title">Experience</p>
+            <h2 class="section-heading">Professional history</h2>
+            <p class="section-intro">Industry internships and academic roles.</p>
+            <ol class="timeline">
+                <li>
+                    <div class="timeline-meta">
+                        <time>Sep 2025 — Dec 2025</time>
+                        <span class="timeline-type">Campus</span>
+                    </div>
+                    <h3>Teaching Assistant · Suffolk University</h3>
+                    <p>Helped students with CS fundamentals, office hours, and grading — strengthened how I explain algorithms and debug problems with others.</p>
+                </li>
+                <li>
+                    <div class="timeline-meta">
+                        <time>Sep 2025 — Dec 2025</time>
+                        <span class="timeline-type">Internship</span>
+                    </div>
+                    <h3>Software Engineer Intern · CollegiateX</h3>
+                    <p>Shipped features in a fast-moving sports-tech startup; worked across APIs and product with a small engineering team.</p>
+                </li>
+                <li>
+                    <div class="timeline-meta">
+                        <time>Jun 2025 — Jul 2025</time>
+                        <span class="timeline-type">Internship</span>
+                    </div>
+                    <h3>Software Engineer Intern · Sapphire Consulting Services</h3>
+                    <p>Built client software on consulting timelines; practiced code review, delivery pressure, and communicating progress clearly.</p>
+                </li>
+                <li>
+                    <div class="timeline-meta">
+                        <time>Jun 2024 — Aug 2024</time>
+                        <span class="timeline-type">Industry</span>
+                    </div>
+                    <h3>Software Engineer · Orange Room Digital</h3>
+                    <p>Developed web and backend features for digital marketing products in the UAE — my first full-time engineering role abroad.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="section" id="projects">
+            <p class="section-title">Work</p>
+            <h2 class="section-heading">Selected projects</h2>
+            <p class="section-intro">
+                Representative systems engineering and quantitative work. Select a project for full technical overview.
+            </p>
+            <div class="project-grid">
+                <article class="project-card project-featured">
+                    <div class="project-header">
+                        <h3>GravityOps v3.5</h3>
+                        <span class="project-badge">Analytics · QSR</span>
+                    </div>
+                    <p>
+                        Profit-protection platform for franchise operators: reconciles labor, revenue, and inventory signals,
+                        runs statistical outlier detection, and turns findings into prioritized action cards with ROI estimates.
+                    </p>
+                    <ul class="project-stats">
+                        <li><strong>$8.4M</strong> leakage surfaced</li>
+                        <li><strong>22.5k+</strong> hourly signals</li>
+                        <li><strong>50</strong> locations modeled</li>
+                    </ul>
+                    <p class="project-tech">FastAPI · Next.js · Pandas · NumPy · PostgreSQL</p>
+                    <div class="project-actions">
+                        <button type="button" class="btn btn-details" data-project="gravityops">Overview</button>
+                        <a href="https://github.com/shahsarmad205/GravityOps" target="_blank" rel="noopener noreferrer">Repository</a>
+                    </div>
+                </article>
+
+                <article class="project-card project-featured">
+                    <div class="project-header">
+                        <h3>Systemic Momentum Engine</h3>
+                        <span class="project-badge">Quant research</span>
+                    </div>
+                    <p>
+                        Systematic equity research platform with walk-forward validation, cross-sectional features,
+                        ensemble ML scoring, and realistic transaction cost modeling.
+                    </p>
+                    <ul class="project-stats">
+                        <li><strong>1.19</strong> mean OOS Sharpe</li>
+                        <li><strong>+0.077</strong> mean IC</li>
+                        <li><strong>6</strong> OOS windows</li>
+                    </ul>
+                    <p class="project-tech">Python · LightGBM · XGBoost · QuantConnect</p>
+                    <div class="project-actions">
+                        <button type="button" class="btn btn-details" data-project="momentum">Overview</button>
+                        <a href="https://github.com/shahsarmad205/systemic_momentum_engine" target="_blank" rel="noopener noreferrer">Repository</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>PQC Shield</h3>
+                        <span class="project-badge">Security SaaS</span>
+                    </div>
+                    <p>
+                        B2B SaaS exposing NIST post-quantum cryptography via REST API with multi-tenant auth,
+                        Stripe billing, audit logging, and cryptographic bill of materials tooling.
+                    </p>
+                    <p class="project-tech">FastAPI · React · TypeScript · liboqs · Stripe</p>
+                    <div class="project-actions">
+                        <button type="button" class="btn btn-details" data-project="pqc">Overview</button>
+                        <a href="https://github.com/shahsarmad205/PQC-shield" target="_blank" rel="noopener noreferrer">Repository</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>myHealth Platform</h3>
+                        <span class="project-badge">Healthcare</span>
+                    </div>
+                    <p>
+                        End-to-end clinical workflows — prescriptions, labs, pharmacy dispense, MFA, PDF exports,
+                        and AI drug-interaction checks across doctor and patient portals.
+                    </p>
+                    <p class="project-tech">FastAPI · PostgreSQL · React · OpenAI · FHIR</p>
+                    <div class="project-actions">
+                        <button type="button" class="btn btn-details" data-project="myhealth">Overview</button>
+                        <a href="https://github.com/shahsarmad205/HealthCare" target="_blank" rel="noopener noreferrer">Repository</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Cloudflare AI Agent</h3>
+                        <span class="project-badge">AI infra</span>
+                    </div>
+                    <p>
+                        Edge-deployed AI agent using Cloudflare Workers AI, Durable Objects for session state,
+                        and Workflows for coordinated multi-step execution.
+                    </p>
+                    <p class="project-tech">TypeScript · Cloudflare Workers · Durable Objects</p>
+                    <div class="project-actions">
+                        <button type="button" class="btn btn-details" data-project="cf-agent">Overview</button>
+                        <a href="https://github.com/shahsarmad205/cf-ai-agent" target="_blank" rel="noopener noreferrer">Repository</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Additional projects</h3>
+                        <span class="project-badge">Engineering</span>
+                    </div>
+                    <p>
+                        Performance marketing backend (Spring Boot, Python), apartment management system (Java, MySQL),
+                        and campus software initiatives.
+                    </p>
+                    <p class="project-tech">Java · Spring Boot · Python · MySQL</p>
+                    <div class="project-actions">
+                        <button type="button" class="btn btn-details" data-project="more">Overview</button>
+                        <a href="https://github.com/shahsarmad205" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <p class="section-title">Expertise</p>
+            <h2 class="section-heading">Technical skills</h2>
+            <div class="skills-grid">
+                <div class="skill-column">
+                    <h3>Software engineering</h3>
+                    <ul>
+                        <li>Python, Java, TypeScript, C/C++</li>
+                        <li>FastAPI, Spring Boot, React, Next.js</li>
+                        <li>REST APIs, JWT auth, async services</li>
+                        <li>PostgreSQL, SQLAlchemy, Git, Linux</li>
+                    </ul>
+                </div>
+                <div class="skill-column">
+                    <h3>Quantitative & data</h3>
+                    <ul>
+                        <li>pandas, NumPy, scikit-learn</li>
+                        <li>Feature engineering & backtesting</li>
+                        <li>Walk-forward / out-of-sample testing</li>
+                        <li>Statistics & applied math coursework</li>
+                        <li>PyTorch (learning & projects)</li>
+                    </ul>
+                </div>
+                <div class="skill-column">
+                    <h3>Professional</h3>
+                    <ul>
+                        <li>Technical writing and presentation</li>
+                        <li>Cross-functional collaboration</li>
+                        <li>Teaching assistant — CS fundamentals</li>
+                        <li>English, Urdu, Sindhi</li>
+                        <li>US · Pakistan · UAE work experience</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-cta" id="contact">
+            <p class="section-title">Contact</p>
+            <h2 class="section-heading">Get in touch</h2>
+            <p class="cta-lead">
+                Open to software engineering, quantitative research, and analyst opportunities.
+                Available for full-time roles beginning after May 2026 graduation.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:shahsarmad205@gmail.com">shahsarmad205@gmail.com</a>
+                <a href="https://www.linkedin.com/in/sarmadshah03/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/shahsarmad205" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Sarmad Shah</p>
+    </footer>
+
+    <div id="project-modal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button type="button" class="modal-close" aria-label="Close details" data-close-modal>×</button>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <template id="detail-gravityops">
+        <span class="modal-badge">Analytics · QSR</span>
+        <h2 id="modal-title">GravityOps v3.5</h2>
+        <p class="modal-lead">Triple-domain operational intelligence for enterprise QSR franchise operators — labor, revenue, and inventory reconciled into one action pipeline.</p>
+        <h3>Problem</h3>
+        <p>Franchise networks lose margin through labor overstaffing, behavioral revenue leakage (voids, comps, refunds), and inventory yield gaps. Static dashboards don't tie signals to dollar impact or prioritized actions.</p>
+        <h3>What I built</h3>
         <ul>
-            <li>
-                <b>Programming:</b>
-                Python, Java, JavaScript, C, C++, HTML5, CSS
-            </li>
-            <li>
-                <b>Frameworks, Technologies & Developer Tools:</b>
-                PyTorch, Laravel, WordPress, Linux, Microsoft Office Suite, IntelliJ
-            </li>
-            <li>
-                <b>Languages:</b>
-                Fluent in English, Urdu, and Sindhi
-            </li>
+            <li><strong>Network Command Center</strong> — executive view of $54M+ modeled network revenue and $8.4M identified leakage across 50 locations.</li>
+            <li><strong>Unified Action Pipeline</strong> — 160+ prioritized action cards with operational checklists and ROI projections in the Strategy Hub.</li>
+            <li><strong>Forensic Audit Engine</strong> — store-level deep dives that decompose multi-domain leakage into temporal signatures.</li>
+            <li><strong>Enterprise ingestion</strong> — DB-native sync processing 22,500+ hourly signals at 97% data trust fidelity.</li>
         </ul>
-    </section>
-    <section id="Projects">
-        <h2>Projects</h2>
-        <p>I am currently collaborating with my university club on a project to develop an interactive map for our university.
-            This map will provide real-time updates on club meetings, class schedules, and other important campus events, enhancing accessibility and convenience for students and faculty.</p>
-    </section>
-<script src="script.js"></script>
+        <h3>Three intelligence pillars</h3>
+        <ul>
+            <li><strong>Inventory yield</strong> — theoretical vs actual usage from POS + BOM; waste attribution (shrinkage, spoilage, recipe drift).</li>
+            <li><strong>Labor efficiency</strong> — Z-score detection of overages; demand-based hourly staffing baselines by peak/off-peak.</li>
+            <li><strong>Revenue protection</strong> — behavioral scoring on voids/comps/refunds; leakage index for margin erosion patterns.</li>
+        </ul>
+        <h3>Pipeline</h3>
+        <p>Data quality audit → labor/revenue detection → inventory flow modeling → waste attribution → strategic synthesis → forensic deep-dive.</p>
+        <h3>Tech stack</h3>
+        <p class="modal-tech">FastAPI · Next.js · TypeScript · Pandas · NumPy · SQLAlchemy · PostgreSQL · Tailwind CSS</p>
+        <p class="modal-note">Metrics derived from high-fidelity enterprise dataset; leakage figures represent reconciled opportunity from signal modeling.</p>
+        <p class="modal-links"><a href="https://github.com/shahsarmad205/GravityOps" target="_blank" rel="noopener noreferrer">View repository</a></p>
+    </template>
+
+    <template id="detail-momentum">
+        <span class="modal-badge">Quant research</span>
+        <h2 id="modal-title">Systemic Momentum Engine</h2>
+        <p class="modal-lead">Production-grade quantitative research system for systematic momentum signals, ML ensemble scoring, portfolio optimization, and QuantConnect deployment.</p>
+        <h3>Overview</h3>
+        <p>End-to-end framework to generate and backtest systematic equity signals on S&P 500 constituents with walk-forward validation, cross-sectional feature engineering, regime-aware risk management, and realistic transaction costs.</p>
+        <h3>Key features</h3>
+        <ul>
+            <li><strong>ML ensemble scoring</strong> — LightGBM Ranker, Ridge, and XGBoost combined for long/short signals.</li>
+            <li><strong>Feature pipeline</strong> — 30+ technical and volatility indicators; cross-sectional z-scores to reduce lookahead bias.</li>
+            <li><strong>Walk-forward validation</strong> — 6 independent OOS windows (2009–2022); mean OOS Sharpe 1.19, 5/6 positive windows, mean IC +0.077.</li>
+            <li><strong>Regime models</strong> — dedicated classifiers for Bull, Bear, HighVol, and Normal regimes.</li>
+            <li><strong>Risk management</strong> — VIX deleveraging, factor neutralisation (sector, beta, size), dynamic sizing, circuit breakers.</li>
+            <li><strong>Realistic costs</strong> — 1.0 bps slippage, $1/trade commission, Almgren-Chriss market impact.</li>
+        </ul>
+        <h3>Production baseline metrics</h3>
+        <ul>
+            <li>Sharpe ratio: <strong>1.252</strong> (HAC-adjusted net Sharpe: 0.944)</li>
+            <li>Sortino ratio: <strong>0.905</strong></li>
+            <li>Deflated Sharpe Ratio: 1.00 (statistical credibility check)</li>
+        </ul>
+        <h3>Tech stack</h3>
+        <p class="modal-tech">Python · pandas · NumPy · scikit-learn · LightGBM · XGBoost · QuantConnect</p>
+        <p class="modal-links"><a href="https://github.com/shahsarmad205/systemic_momentum_engine" target="_blank" rel="noopener noreferrer">View repository</a></p>
+    </template>
+
+    <template id="detail-pqc">
+        <span class="modal-badge">Security SaaS</span>
+        <h2 id="modal-title">PQC Shield</h2>
+        <p class="modal-lead">B2B SaaS exposing NIST-standardized post-quantum cryptography (ML-KEM, ML-DSA, SLH-DSA via liboqs) as a REST API for enterprise and government security teams.</p>
+        <h3>Scope</h3>
+        <p>Enterprise-grade delivery of cryptographic primitives via multi-tenant APIs, subscription billing, audit trails, and compliance-oriented user workflows.</p>
+        <h3>Product features</h3>
+        <ul>
+            <li><strong>Dashboard</strong> — KEM encrypt (keygen/encapsulate) and DSA sign panels; usage stats.</li>
+            <li><strong>API keys</strong> — create, list, deactivate; one-time secret display with copy.</li>
+            <li><strong>Billing</strong> — Starter / Pro / Enterprise plans; Stripe Checkout and Customer Portal.</li>
+            <li><strong>Audit log</strong> — paginated log with date range and operation filters; CSV export (TanStack Table).</li>
+            <li><strong>CBOM</strong> — Cryptographic Bill of Materials: threat clock, asset inventory, discovery scans, AI migration planner.</li>
+            <li><strong>Compliance</strong> — algorithm reference table and PDF report export.</li>
+        </ul>
+        <h3>Auth & API</h3>
+        <p>JWT registration/login plus org-scoped API keys (<code>pqcs_...</code>). Crypto endpoints for KEM/DSA operations. Dual auth: <code>Authorization: Bearer</code> or <code>X-API-Key</code>.</p>
+        <h3>Tech stack</h3>
+        <p class="modal-tech">FastAPI · async SQLAlchemy (asyncpg) · Alembic · React 18 · TypeScript · Vite · Tailwind · shadcn/ui · React Query · Stripe · liboqs</p>
+        <p class="modal-links"><a href="https://github.com/shahsarmad205/PQC-shield" target="_blank" rel="noopener noreferrer">View repository</a></p>
+    </template>
+
+    <template id="detail-myhealth">
+        <span class="modal-badge">Healthcare</span>
+        <h2 id="modal-title">myHealth Platform</h2>
+        <p class="modal-lead">Full-featured healthcare platform with prescriptions, lab results, pharmacy dispense, MFA, PDF exports, and AI-powered clinical insights.</p>
+        <h3>Architecture</h3>
+        <p>FastAPI backend with PostgreSQL, separate React portals for doctors and patients, service layer for AI/MFA/PDF/audit, and FHIR R4 converters for interoperability.</p>
+        <h3>Role-based workflows</h3>
+        <ul>
+            <li><strong>Doctors</strong> — patient charts, e-prescribing, drug interaction checks, lab orders, AI result summaries, PDF prescriptions.</li>
+            <li><strong>Patients</strong> — lab results with AI explanations, digital prescription wallet, secure messaging, care timeline.</li>
+            <li><strong>Pharmacists</strong> — prescription queue, verification, dispense recording, refill tracking.</li>
+            <li><strong>Labs</strong> — order intake, result upload, abnormal value flagging, notifications.</li>
+        </ul>
+        <h3>Security & compliance-minded design</h3>
+        <ul>
+            <li>JWT + refresh tokens; MFA/2FA with TOTP and backup codes.</li>
+            <li>RBAC with tenant isolation and resource-level permissions.</li>
+            <li>Immutable audit logs (who/what/when) — HIPAA-ready architecture.</li>
+            <li>AI drug interaction checks on prescription create.</li>
+        </ul>
+        <h3>Status</h3>
+        <p>MVP core ~75% complete: prescription system, pharmacy dispense backend, MFA, PDF generation, and usage tracking for future SaaS billing. Pharmacy portal UI in progress.</p>
+        <h3>Tech stack</h3>
+        <p class="modal-tech">FastAPI · PostgreSQL · React · TypeScript · OpenAI · FHIR · ReportLab</p>
+        <p class="modal-links"><a href="https://github.com/shahsarmad205/HealthCare" target="_blank" rel="noopener noreferrer">View repository</a></p>
+    </template>
+
+    <template id="detail-cf-agent">
+        <span class="modal-badge">AI infra</span>
+        <h2 id="modal-title">Cloudflare AI Agent</h2>
+        <p class="modal-lead">Edge-deployed AI agent demonstrating Workers AI, Durable Object state, Workflows, and a browser chat UI.</p>
+        <h3>What it demonstrates</h3>
+        <ul>
+            <li><strong>LLM</strong> — Workers AI with configurable model via wrangler.toml.</li>
+            <li><strong>Memory</strong> — conversation history persisted in a Durable Object.</li>
+            <li><strong>Workflows</strong> — multi-step demo (e.g. draft follow-up email with sign-off flow).</li>
+            <li><strong>UI</strong> — simple chat interface served from <code>public/</code>.</li>
+        </ul>
+        <h3>Architecture notes</h3>
+        <p>Demonstrates stateful edge agents: conversation persistence in Durable Objects, model inference via Workers AI, and workflow-based task coordination without a centralized application server.</p>
+        <h3>Tech stack</h3>
+        <p class="modal-tech">TypeScript · Cloudflare Workers · Durable Objects · Workers AI · Workflows</p>
+        <p class="modal-links"><a href="https://github.com/shahsarmad205/cf-ai-agent" target="_blank" rel="noopener noreferrer">View repository</a></p>
+    </template>
+
+    <template id="detail-more">
+        <span class="modal-badge">Learning</span>
+        <h2 id="modal-title">Additional builds</h2>
+        <p class="modal-lead">Smaller projects where I practiced new stacks, domains, and delivery patterns.</p>
+        <h3>Performance marketing backend</h3>
+        <p>Scalable backend for a performance marketing app using <strong>Java Spring Boot</strong> and <strong>Python</strong> — combining mathematical modeling with production API design. In active development.</p>
+        <h3>Apartment management system</h3>
+        <p>Full-stack property management: Spring Boot REST APIs, MySQL 8, Maven, and a web client for leasing and operations. Includes database migrations and role-based workflows.</p>
+        <p class="modal-tech">Java 17 · Spring Boot · MySQL · JavaScript</p>
+        <h3>Campus & other tools</h3>
+        <p>Collaborated on an interactive university campus map (club meetings, schedules, events) and miscellaneous coursework/production experiments.</p>
+        <p class="modal-links"><a href="https://github.com/shahsarmad205/DatabaseProject" target="_blank" rel="noopener noreferrer">Apartment system</a> · <a href="https://github.com/shahsarmad205" target="_blank" rel="noopener noreferrer">GitHub profile</a></p>
+    </template>
+
+    <script src="script.js"></script>
 </body>
 </html>
